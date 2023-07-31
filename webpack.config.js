@@ -6,11 +6,19 @@ const TerserPlugin = require('terser-webpack-plugin');
 
 module.exports = {
   entry: './src/index.js',
-  mode: 'production',
+  mode: 'development',
   output: {
     path: path.join(__dirname, 'dist'),
-    filename: 'bundle.js',
-    publicPath: './' // set assets path to relative
+    filename: 'bundle.[contenthash].js',
+    clean: true
+    // publicPath: './' // set assets path to relative
+  },
+  devServer: {
+    compress: true,
+    port: 8000,
+    open: true,
+    hot: 'only',
+    watchFiles: ['./src/*.html']
   },
   plugins: [
     new HtmlWebpackPlugin({

@@ -18,6 +18,6 @@ class Person {
 
 const jd = new Person('JD', 43);
 
-console.log(jd);
+console.log('changed again');
 
 
