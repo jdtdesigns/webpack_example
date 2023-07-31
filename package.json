@@ -5,6 +5,7 @@
   "main": "webpack.config.js",
   "scripts": {
     "build": "webpack",
+    "build:prod": "webpack --mode=production",
     "dev": "webpack-dev-server"
   },
   "keywords": [],

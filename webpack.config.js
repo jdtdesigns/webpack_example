@@ -10,7 +10,16 @@ module.exports = {
   output: {
     path: path.join(__dirname, 'dist'),
     filename: 'bundle.[contenthash].js',
-    clean: true
+    clean: true,
+    environment: {
+      arrowFunction: false,
+      bigIntLiteral: false,
+      const: false,
+      destructuring: false,
+      dynamicImport: false,
+      forOf: false,
+      module: false,
+    },
     // publicPath: './' // set assets path to relative
   },
   devServer: {
@@ -45,11 +54,6 @@ module.exports = {
           options: {
             presets: [
               ['@babel/preset-env', { targets: 'ie 9' }]
-            ],
-            plugins: [
-              '@babel/plugin-transform-arrow-functions',
-              '@babel/plugin-transform-block-scoping'
-              // other plugins you may need
             ]
           }
         }
