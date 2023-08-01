@@ -1,0 +1,48 @@
+{
+  "icons": [
+    {
+      "src": "/icon_192x192.a91aa204ce748879f89b4b4fb0157619.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "maskable"
+    },
+    {
+      "src": "/icon_512x512.d283f9524437430bf7c376bad4387222.png",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_384x384.708f988e5574cddff25468c6dfefb3a1.png",
+      "sizes": "384x384",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_256x256.c7da26706e7a24ba4638c32183138056.png",
+      "sizes": "256x256",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_192x192.1f0e9175c13f548c354c4748ef651ed4.png",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_128x128.da33122eb7ba34748772b96dcc13e497.png",
+      "sizes": "128x128",
+      "type": "image/png"
+    },
+    {
+      "src": "/icon_96x96.ac4fd5fe802137bd9fc0c2f594065739.png",
+      "sizes": "96x96",
+      "type": "image/png"
+    }
+  ],
+  "name": "Notes PWA App",
+  "short_name": "NPWAApp",
+  "orientation": "portrait",
+  "display": "standalone",
+  "start_url": ".",
+  "description": "Amazing note taking application!",
+  "background_color": "#555",
+  "theme_color": "#35ae9b"
+}

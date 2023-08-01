@@ -1,0 +1,48 @@
+$mainColor: #fff;
+$noteBg: #35ae9b;
+
+body {
+  background: #555;
+  font-family: sans-serif;
+}
+
+h1 {
+  text-align: center;
+  color: $mainColor;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+  width: 400px;
+  margin: 0 auto 25px;
+  > * {
+    margin: 4px 0;
+    padding: 6px 10px;
+  }
+}
+
+.notes {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 15px;
+  .no-notes {
+    color: #fff;
+    width: 250px;
+    margin-left: 50px;
+  }
+  .note {
+    background: $noteBg;
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    transition: background .3s;
+    &:hover {
+      background: darken($noteBg, 3%);
+    }
+    p {
+      color: #fff;
+    }
+  }
+}

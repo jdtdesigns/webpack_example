@@ -6,8 +6,13 @@
   <title><%= htmlWebpackPlugin.options.title %></title>
 </head>
 <body>
-  <h1>Webpack Example Changed</h1>
+  <h1>Note PWA App</h1>
 
-  <div class="output"></div>
+  <form id="note-form">
+    <input id="note-input" type="text" placeholder="Enter your note text">
+    <button>Save Note</button>
+  </form>
+
+  <main class="notes"></main>
 </body>
 </html>

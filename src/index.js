@@ -1,23 +1,9 @@
-// const sayHello = require('./lib/sayHello');
-// ESM Version
-import sayHello from './lib/sayHello';
-import { outputLogo } from './lib/outputLogo';
-import './styles/main.css';
+import './styles/main.scss';
 
-// Some comment
-// sayHello();
+import NoteApp from './lib/NoteApp';
 
-outputLogo();
+NoteApp.init();
 
-class Person {
-  constructor(name, age) {
-    this.name = name;
-    this.age = age;
-  }
+if ('serviceWorker' in navigator && process.env.NODE_ENV === 'production') {
+  navigator.serviceWorker.register('/service-worker.js');
 }
-
-const jd = new Person('JD', 43);
-
-console.log('changed again');
-
-
